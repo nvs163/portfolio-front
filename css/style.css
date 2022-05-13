@@ -95,4 +95,50 @@ h6 {
 img {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 75px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  max-width: 9.916875rem;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  margin-right: 35px;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-item a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 130%;
+}

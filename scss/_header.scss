@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 75px;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    max-width: 9.916875rem;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu-item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 130%;
+  }
+}
