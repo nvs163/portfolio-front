@@ -1,4 +1,3 @@
-/* Null styles */
 * {
   padding: 0;
   margin: 0;
@@ -85,7 +84,6 @@ h6 {
   font-weight: inherit;
 }
 
-/*--------------------*/
 .container {
   max-width: 73.125rem;
   padding: 0;
@@ -101,6 +99,7 @@ img {
   width: 100%;
   left: 0;
   top: 75px;
+  z-index: 1;
 }
 
 .header-content {
@@ -141,4 +140,50 @@ img {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 130%;
+}
+
+.hero {
+  background: #2352de url(../image/hero/hero_background.jpg) no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content {
+  padding: 448px 0 63px;
+}
+
+.hero-text {
+  margin-bottom: 235px;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+.hero-title {
+  font-size: 5.625rem;
+  line-height: 130%;
+  font-weight: 900;
+}
+
+.hero-see {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 130%;
+  position: relative;
+}
+
+.hero-see::after {
+  content: '';
+  width: 37px;
+  height: 21px;
+  background-image: url(../image/hero/Vector.png);
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }

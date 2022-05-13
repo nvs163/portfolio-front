@@ -1,0 +1,44 @@
+.hero {
+  background: rgba(35, 82, 222, 1) url(../image/hero/hero_background.jpg) no-repeat;
+  color: #fff;
+  position: relative;
+
+  &-content {
+    padding: 448px 0 63px;
+  }
+
+  &-text {
+    margin-bottom: 235px;
+  }
+
+  &-subtitle {
+    font-size: 3rem;
+    line-height: 130%;
+  }
+
+  &-title {
+    font-size: 5.625rem;
+    line-height: 130%;
+    font-weight: 900;
+  }
+
+  &-see {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 130%;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 37px;
+      height: 21px;
+      background-image: url(../image/hero/Vector.png);
+      position: absolute;
+      top: 29px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
