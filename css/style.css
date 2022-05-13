@@ -99,7 +99,7 @@ img {
   width: 100%;
   left: 0;
   top: 75px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-content {
@@ -143,9 +143,20 @@ img {
 }
 
 .hero {
-  background: #2352de url(../image/hero/hero_background.jpg) no-repeat;
+  background: url(../image/hero/hero_background.jpg) no-repeat;
   color: #fff;
   position: relative;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(35, 82, 222, 0.5);
+  z-index: 2;
 }
 
 .hero-content {
