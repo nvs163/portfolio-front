@@ -1,20 +1,20 @@
 .skills {
   background: #F6F6F8;
-  &-content {
+  &__content {
     padding: 140px 0;
   }
 
-  &-row {
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &-img {
+  &__img {
     max-width: 415px;
   }
 
-  &-list {
+  &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
     }
   }
 
-  &-name {
+  &__name {
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 100%;
@@ -32,13 +32,13 @@
     width: 64px;
   }
 
-  &-progress {
+  &__progress {
     width: 600px;
     height: 32px;
     background: #DBDBED;
     position: relative;
 
-    &__html::after, &__css::after, &__js::after {
+    &-html::after, &-css::after, &-js::after {
       content: '';
       position: absolute;
       top: 0;
@@ -46,13 +46,13 @@
       height: 32px;
       background: #2352DE;
     }
-    &__html::after {
+    &-html::after {
       width: 510px;
     }
-    &__css::after {
+    &-css::after {
       width: 480px;
     }
-    &__js::after {
+    &-js::after {
       width: 366px;
     }
   }

@@ -14,29 +14,30 @@
     z-index: 1;
   }
 
-  &-content {
+  &__content {
     padding: 448px 0 63px;
     position: relative;
     z-index: 2;
     color: $color-white;
   }
 
-  &-text {
+  &__title {
     margin-bottom: 235px;
+
+    &-bold {
+      font-size: 5.625rem;
+      line-height: 135%;
+      font-weight: 900;
+    }
   }
 
-  &-subtitle {
+  &__subtitle {
+    display: block;
     font-size: 3rem;
     line-height: 150%;
   }
 
-  &-title {
-    font-size: 5.625rem;
-    line-height: 135%;
-    font-weight: 900;
-  }
-
-  &-see {
+  &__link {
     display: block;
     text-align: center;
     font-weight: 600;
@@ -48,7 +49,7 @@
       content: '';
       width: 37px;
       height: 21px;
-      background-image: url(../image/hero/Vector.png);
+      background-image: url(../image/hero/vector.svg);
       position: absolute;
       top: 29px;
       left: 50%;

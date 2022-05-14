@@ -97,7 +97,7 @@ img {
   max-width: 100%;
 }
 
-.section-title {
+.section__title {
   display: inline-block;
   font-weight: 700;
   font-size: 3rem;
@@ -106,7 +106,7 @@ img {
   position: relative;
 }
 
-.section-title::after {
+.section__title::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -124,7 +124,7 @@ img {
   z-index: 2;
 }
 
-.header-content {
+.header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,11 +136,11 @@ img {
           align-items: center;
 }
 
-.header-logo {
+.logo {
   max-width: 9.916875rem;
 }
 
-.header-list {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,15 +149,15 @@ img {
           justify-content: space-between;
 }
 
-.menu-item {
+.menu__item {
   margin-right: 35px;
 }
 
-.menu-item:last-child {
+.menu__item:last-child {
   margin-right: 0;
 }
 
-.menu-item a {
+.menu__item a {
   color: #FFF;
   font-weight: 600;
   font-size: 1.125rem;
@@ -181,29 +181,30 @@ img {
   z-index: 1;
 }
 
-.hero-content {
+.hero__content {
   padding: 448px 0 63px;
   position: relative;
   z-index: 2;
   color: #FFF;
 }
 
-.hero-text {
+.hero__title {
   margin-bottom: 235px;
 }
 
-.hero-subtitle {
-  font-size: 3rem;
-  line-height: 150%;
-}
-
-.hero-title {
+.hero__title-bold {
   font-size: 5.625rem;
   line-height: 135%;
   font-weight: 900;
 }
 
-.hero-see {
+.hero__subtitle {
+  display: block;
+  font-size: 3rem;
+  line-height: 150%;
+}
+
+.hero__link {
   display: block;
   text-align: center;
   font-weight: 600;
@@ -212,11 +213,11 @@ img {
   position: relative;
 }
 
-.hero-see::after {
+.hero__link::after {
   content: '';
   width: 37px;
   height: 21px;
-  background-image: url(../image/hero/Vector.png);
+  background-image: url(../image/hero/vector.svg);
   position: absolute;
   top: 29px;
   left: 50%;
@@ -224,29 +225,29 @@ img {
           transform: translate(-50%, 0);
 }
 
-.about-content {
-  padding: 140px 0;
+.about__title {
+  margin-top: 140px;
 }
 
-.about-text {
+.about__text {
   font-size: 1.125rem;
   line-height: 160%;
-  margin-bottom: 30px;
+  margin-bottom: 110px;
 }
 
-.about-text:last-child {
-  margin-bottom: 0;
+.about__text > p {
+  margin-bottom: 30px;
 }
 
 .skills {
   background: #F6F6F8;
 }
 
-.skills-content {
+.skills__content {
   padding: 140px 0;
 }
 
-.skills-row {
+.skills__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,11 +259,11 @@ img {
           align-items: center;
 }
 
-.skills-img {
+.skills__img {
   max-width: 415px;
 }
 
-.skills-list {
+.skills__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,11 +276,11 @@ img {
   margin-bottom: 86px;
 }
 
-.skills-list:last-child {
+.skills__item:last-child {
   margin-bottom: 0;
 }
 
-.skills-name {
+.skills__name {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 100%;
@@ -287,14 +288,14 @@ img {
   width: 64px;
 }
 
-.skills-progress {
+.skills__progress {
   width: 600px;
   height: 32px;
   background: #DBDBED;
   position: relative;
 }
 
-.skills-progress__html::after, .skills-progress__css::after, .skills-progress__js::after {
+.skills__progress-html::after, .skills__progress-css::after, .skills__progress-js::after {
   content: '';
   position: absolute;
   top: 0;
@@ -303,23 +304,23 @@ img {
   background: #2352DE;
 }
 
-.skills-progress__html::after {
+.skills__progress-html::after {
   width: 510px;
 }
 
-.skills-progress__css::after {
+.skills__progress-css::after {
   width: 480px;
 }
 
-.skills-progress__js::after {
+.skills__progress-js::after {
   width: 366px;
 }
 
-.services-content {
+.services__content {
   padding: 140px 0;
 }
 
-.services-list {
+.services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +334,7 @@ img {
       flex-wrap: nowrap;
 }
 
-.services-card {
+.services__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,12 +348,26 @@ img {
   width: 28.20513%;
 }
 
-.services-card__icon {
-  max-width: 60px;
+.services__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
   margin-bottom: 30px;
 }
 
-.services-card__title {
+.services__icon-markup {
+  background-image: url("../image/services/markup_icon.svg");
+}
+
+.services__icon-cms {
+  background-image: url("../image/services/dev_icon.svg");
+}
+
+.services__icon-support {
+  background-image: url("../image/services/chat_icon.svg");
+}
+
+.services__title {
   display: block;
   font-weight: 600;
   font-size: 1.75rem;
@@ -360,7 +375,7 @@ img {
   margin-bottom: 25px;
 }
 
-.services-card__description {
+.services__description {
   font-size: 1rem;
   line-height: 160%;
 }

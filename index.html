@@ -10,38 +10,34 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-content">
+      <nav class="header__content">
 
-        <div class="header-logo logo">
-          <a class="logo-link" href="#">
-            <img class="logo-img" src="./image/header/logo.png" alt="logo">
-          </a>
-        </div>
+        <a class="logo" href="/">
+          <img src="./image/header/logo.svg" alt="Логотип">
+        </a>
 
-        <nav class="header-menu menu">
-          <ul class="header-list list">
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Обо мне</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Навыки</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Услуги</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Портфолио</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Отзывы</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Навыки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
 
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -49,14 +45,14 @@
 
     <section class="hero">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero__content">
 
-          <div class="hero-text">
-            <span class="hero-subtitle">Привет, я Владислав Никитин</span>
-            <h1 class="hero-title">frontend-<br>разработчик</h1>
-          </div>
+          <h1 class="hero__title">
+            <span class="hero__subtitle">Привет, я Владислав Никитин</span>
+            <span class="hero__title-bold">frontend-<br>разработчик</span>
+          </h1>
 
-          <span class="hero-see">смотреть работы</span>
+          <a class="hero__link">смотреть работы</a>
 
         </div>
       </div>
@@ -64,43 +60,45 @@
 
     <section class="about">
       <div class="container">
-        <div class="about-content">
-          <h2 class="about-title section-title">Обо мне</h2>
-          <p class="about-text">
+
+        <h2 class="about__title section__title">Обо мне</h2>
+
+        <div class="about__text">
+          <p>
             Приветствую всех на своём сайте! Меня зовут Владислав, я из Самары. Занимаюсь фронтенд-разработкой менее года. До разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за что взяться, чтобы дело приносило удовольствие и деньги, пока не наткнулся на один интересный курс.
           </p>
-          <p class="about-text">
+          <p>
             С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то сложнее.  Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через несколько месяцев принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и примерами работ можно ознакомиться ниже.
           </p>
         </div>
+
       </div>
     </section>
 
     <section class="skills">
       <div class="container">
-        <div class="skills-content">
-          <h2 class="skills-title section-title">Навыки</h2>
+        <div class="skills__content">
+          <h2 class="section__title">Навыки</h2>
 
-          <div class="skills-row">
+          <div class="skills__inner">
 
-            <div class="skills-img">
-              <img src="./image/skills/portrait.png" alt="man">
-            </div>
+            <img class="skills-img" src="./image/skills/portrait.png" alt="Разработчик-сайтов">
 
-            <ul class="skills-level">
-              <li class="skills-list">
-                <span class="skills-name">html</span>
-                <span class="skills-progress skills-progress__html"></span>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="skills__name">html</span>
+                <span class="skills__progress skills__progress-html"></span>
               </li>
-              <li class="skills-list">
-                <span class="skills-name">css</span>
-                <span class="skills-progress skills-progress__css"></span>
+              <li class="skills__item">
+                <span class="skills__name">css</span>
+                <span class="skills__progress skills__progress-css"></span>
               </li>
-              <li class="skills-list">
-                <span class="skills-name">js</span>
-                <span class="skills-progress skills-progress__js"></span>
+              <li class="skills__item">
+                <span class="skills__name">js</span>
+                <span class="skills__progress skills__progress-js"></span>
               </li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -108,36 +106,36 @@
 
     <section class="services">
       <div class="container">
-        <div class="services-content">
-          <h2 class="services-title section-title">Услуги</h2>
+        <div class="services__content">
+          <h2 class="section__title">Услуги</h2>
 
-          <div class="services-list">
+          <ul class="services__list">
 
-            <div class="services-card">
-              <img class="services-card__icon" src="./image/services/markup_icon.png" alt="icon">
-              <span class="services-card__title">Вёрстка проектов</span>
-              <span class="services-card__description">
-                Сделаю качественную вёрстку вашего  проекта по предоставленному макету или примеру
-              </span>
-            </div>
+            <li class="services__item">
+              <i class="services__icon services__icon-markup"></i>
+              <h3 class="services__title">Вёрстка проектов</h3>
+              <div class="services__description">
+                <span>Сделаю качественную вёрстку вашего  проекта по предоставленному макету или примеру</span>
+              </div>
+            </li>
 
-            <div class="services-card">
-              <img class="services-card__icon" src="./image/services/dev_icon.png" alt="icon">
-              <span class="services-card__title">Посадка на CMS</span>
-              <span class="services-card__description">
-                Интегрирую ваш проект в одну из популярных CMS
-              </span>
-            </div>
+            <li class="services__item">
+              <i class="services__icon services__icon-cms"></i>
+              <h3 class="services__title">Посадка на CMS</h3>
+              <div class="services__description">
+                <span>Интегрирую ваш проект в одну из популярных CMS</span>
+              </div>
+            </li>
 
-            <div class="services-card">
-              <img class="services-card__icon" src="./image/services/chat_icon.png" alt="icon">
-              <span class="services-card__title">Поддержка сайта</span>
-              <span class="services-card__description">
-                Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
-              </span>
-            </div>
+            <li class="services__item">
+              <i class="services__icon services__icon-support"></i>
+              <h3 class="services__title">Поддержка сайта</h3>
+              <div class="services__description">
+                <span>Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта</span>
+              </div>
+            </li>
 
-          </div>
+          </ul>
         </div>
       </div>
     </section>
