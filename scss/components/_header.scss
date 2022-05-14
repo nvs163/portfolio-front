@@ -13,26 +13,24 @@
 }
 
 .logo {
-  max-width: 9.916875rem;
+  max-width: 158.67px;
 }
 
 .menu {
   &__list {
     display: flex;
-    justify-content: space-between;
   }
 
   &__item {
-    margin-right: 35px;
-    &:last-child {
-      margin-right: 0;
+    &:not(:last-child) {
+      margin-right: 35px;
     }
-
-    & a {
-      color: $color-white;
-      font-weight: 600;
-      font-size: 1.125rem;
-      line-height: 130%;
-    }
+  }
+  
+  &__link {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 130%;
   }
 }

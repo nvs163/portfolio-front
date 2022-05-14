@@ -1,20 +1,11 @@
 .services {
-  &__content {
-    padding: 140px 0;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    flex-wrap: nowrap;
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: (330px/1170px)*100%;
+    max-width: 330px;
   }
 
   &__icon {
@@ -35,7 +26,6 @@
   }
 
   &__title {
-    display: block;
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 130%;

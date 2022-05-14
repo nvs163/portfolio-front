@@ -1,0 +1,40 @@
+.skills {
+  background: #F6F6F8;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    max-width: 415px;
+  }
+
+  &__item {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 86px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: 64px;
+  }
+
+  &__progress {
+    height: 32px;
+    &-blue {
+      background-color: #2352DE;
+    }
+    &-grey {
+      background-color: #DBDBED;
+    }
+  }
+}

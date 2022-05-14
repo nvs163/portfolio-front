@@ -1,14 +1,9 @@
 .about {
-  &__title {
-    margin-top: 140px;
-  }
-
   &__text {
     font-size: 1.125rem;
     line-height: 160%;
-    margin-bottom: 110px;
     
-    & > p {
+    & > p:not(:last-child) {
       margin-bottom: 30px;
     }
   }

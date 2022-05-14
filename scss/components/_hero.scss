@@ -1,6 +1,6 @@
 .hero {
   background: url(../image/hero/hero_background.jpg) center no-repeat;
-  color: #fff;
+  background-size: cover;
   position: relative;
 
   &:after {
@@ -10,31 +10,32 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(35, 82, 222, 0.5);
+    background-color: rgba(35, 82, 222, 0.5);
     z-index: 1;
   }
 
   &__content {
-    padding: 448px 0 63px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     position: relative;
     z-index: 2;
     color: $color-white;
   }
 
-  &__title {
-    margin-bottom: 235px;
+  &__text {
+    margin: auto 0;
+  }
 
+  &__title {
+    font-size: 3rem;
+    line-height: 150%;
     &-bold {
+      display: block;
       font-size: 5.625rem;
       line-height: 135%;
       font-weight: 900;
     }
-  }
-
-  &__subtitle {
-    display: block;
-    font-size: 3rem;
-    line-height: 150%;
   }
 
   &__link {
@@ -44,6 +45,7 @@
     font-size: 1.125rem;
     line-height: 130%;
     position: relative;
+    padding-bottom: 48px;
 
     &::after {
       content: '';
@@ -51,7 +53,7 @@
       height: 21px;
       background-image: url(../image/hero/vector.svg);
       position: absolute;
-      top: 29px;
+      bottom: 20px;
       left: 50%;
       transform: translate(-50%, 0);
     }
