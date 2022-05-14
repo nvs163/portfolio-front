@@ -90,6 +90,7 @@ h6 {
   padding: 0;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+  color: #333333;
 }
 
 img {
@@ -97,11 +98,22 @@ img {
 }
 
 .section-title {
+  display: inline-block;
   font-weight: 700;
   font-size: 3rem;
   line-height: 130%;
-  color: #333333;
   margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(35, 82, 222, 0.102);
+  bottom: 5px;
+  left: 0;
 }
 
 .header {
@@ -146,14 +158,14 @@ img {
 }
 
 .menu-item a {
-  color: #fff;
+  color: #FFF;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 130%;
 }
 
 .hero {
-  background: url(../image/hero/hero_background.jpg) no-repeat;
+  background: url(../image/hero/hero_background.jpg) center no-repeat;
   color: #fff;
   position: relative;
 }
@@ -173,6 +185,7 @@ img {
   padding: 448px 0 63px;
   position: relative;
   z-index: 2;
+  color: #FFF;
 }
 
 .hero-text {
@@ -181,12 +194,12 @@ img {
 
 .hero-subtitle {
   font-size: 3rem;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 .hero-title {
   font-size: 5.625rem;
-  line-height: 130%;
+  line-height: 135%;
   font-weight: 900;
 }
 
@@ -271,8 +284,7 @@ img {
   font-size: 1.125rem;
   line-height: 100%;
   text-transform: uppercase;
-  color: #333333;
-  width: 90px;
+  width: 64px;
 }
 
 .skills-progress {

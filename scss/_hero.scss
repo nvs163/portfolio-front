@@ -1,5 +1,5 @@
 .hero {
-  background: url(../image/hero/hero_background.jpg) no-repeat;
+  background: url(../image/hero/hero_background.jpg) center no-repeat;
   color: #fff;
   position: relative;
 
@@ -18,6 +18,7 @@
     padding: 448px 0 63px;
     position: relative;
     z-index: 2;
+    color: $color-white;
   }
 
   &-text {
@@ -26,12 +27,12 @@
 
   &-subtitle {
     font-size: 3rem;
-    line-height: 130%;
+    line-height: 150%;
   }
 
   &-title {
     font-size: 5.625rem;
-    line-height: 130%;
+    line-height: 135%;
     font-weight: 900;
   }
 
