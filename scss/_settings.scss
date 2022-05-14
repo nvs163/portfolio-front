@@ -2,8 +2,17 @@
   max-width: 73.125rem;
   padding: 0;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 img {
   width: 100%;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 60px;
 }

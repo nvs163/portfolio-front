@@ -1,0 +1,14 @@
+.about {
+  &-content {
+    padding: 140px 0;
+  }
+
+  &-text {
+    font-size: 1.125rem;
+    line-height: 160%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
