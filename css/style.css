@@ -156,11 +156,13 @@ img {
   right: 0;
   bottom: 0;
   background: rgba(35, 82, 222, 0.5);
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-content {
   padding: 448px 0 63px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text {
