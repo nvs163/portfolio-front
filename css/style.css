@@ -93,7 +93,7 @@ h6 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .section-title {
@@ -223,4 +223,82 @@ img {
 
 .about-text:last-child {
   margin-bottom: 0;
+}
+
+.skills {
+  background: #F6F6F8;
+}
+
+.skills-content {
+  padding: 140px 0;
+}
+
+.skills-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-img {
+  max-width: 415px;
+}
+
+.skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 86px;
+}
+
+.skills-list:last-child {
+  margin-bottom: 0;
+}
+
+.skills-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #333333;
+  width: 90px;
+}
+
+.skills-progress {
+  width: 600px;
+  height: 32px;
+  background: #DBDBED;
+  position: relative;
+}
+
+.skills-progress__html::after, .skills-progress__css::after, .skills-progress__js::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  background: #2352DE;
+}
+
+.skills-progress__html::after {
+  width: 510px;
+}
+
+.skills-progress__css::after {
+  width: 480px;
+}
+
+.skills-progress__js::after {
+  width: 366px;
 }
