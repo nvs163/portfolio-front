@@ -205,7 +205,7 @@ img {
   line-height: 150%;
 }
 
-.hero__title-bold {
+.hero__title--bold {
   display: block;
   font-size: 5.625rem;
   line-height: 135%;
@@ -288,11 +288,11 @@ img {
   height: 32px;
 }
 
-.skills__progress-blue {
+.skills__progress--blue {
   background-color: #2352DE;
 }
 
-.skills__progress-grey {
+.skills__progress--grey {
   background-color: #DBDBED;
 }
 
@@ -338,4 +338,78 @@ img {
 .services__description {
   font-size: 1rem;
   line-height: 160%;
+}
+
+.portfolio {
+  padding-top: 0;
+}
+
+.portfolio__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.portfolio__btn {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 160%;
+  background-color: inherit;
+  margin-right: 35px;
+}
+
+.portfolio__btn:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
+          box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
+  border-radius: 3px;
+}
+
+.portfolio__btn:active {
+  color: #2352DE;
+}
+
+.portfolio__btn:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #2352DE;
+}
+
+.portfolio__cases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio__img {
+  display: inline-block;
+  max-width: 360px;
+  max-height: 360px;
+  margin-bottom: 45px;
+}
+
+.portfolio__btn-load {
+  font-size: 1.125rem;
+  color: #FFF;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #2352DE;
 }
