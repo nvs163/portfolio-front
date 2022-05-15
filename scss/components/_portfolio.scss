@@ -11,18 +11,15 @@
     margin-bottom: 60px;
   }
 
-  // &__item {
-  //   &:not(:last-child) {
-  //     margin-right: 35px;
-  //   }
-  // }
-
   &__btn {
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 160%;
     background-color: inherit;
     margin-right: 35px;
+    // &:not(:last-child) {
+    //   margin-right: 35px;
+    // }
     
     &:focus {
       box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
@@ -41,18 +38,26 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 60px;
   }
 
   &__img {
     max-width: 360px;
     max-height: 360px;
-    margin-bottom: 45px;
+    object-fit: cover;
+    // Нижний отступ для всех картинок, кроме тех, что в последнем ряду
+    &:not(:nth-last-child(-n+3)) {
+      margin-bottom: 45px;
+    }
+    // Отступ справа для всех картинок, кроме тех, что в последней колонке
+    &:not(:nth-child(3n)) {
+      margin-right: 45px;
+    }
   }
 
   &__btn-load {
     font-size: 1.125rem;
     color: $color-white;
-    margin-top: 15px;
     padding: 12px 24px;
     background-color: #2352DE;
 
