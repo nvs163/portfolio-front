@@ -241,7 +241,6 @@ img {
 }
 
 .hero__link {
-  display: inline-block;
   text-align: center;
   font-weight: 600;
   font-size: 1.125rem;

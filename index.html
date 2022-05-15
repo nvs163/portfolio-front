@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Таблица стилей -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Фавикон -->
   <link rel="icon" href="./image/favicons/favicon.ico">
   <link rel="icon" href="./image/favicons/favicon.svg" type="image/svg+xml">
 
@@ -13,6 +16,7 @@
 </head>
 
 <body>
+
   <!-- Шапка страницы -->
   <header class="header">
     <div class="container">
@@ -179,30 +183,30 @@
           <!-- Список направленый выполненных работ -->
           <ul class="portfolio__list">
             <li class="porfolio__item">
-              <button class="portfolio__btn portfolio__btn--active">Все работы</button>
+              <button class="portfolio__btn portfolio__btn--active" type="button" data-filter="all">Все работы</button>
             </li>
             <li class="porfolio__item">
-              <button class="portfolio__btn">Лендинги</button>
+              <button class="portfolio__btn" data-filter=".landing">Лендинги</button>
             </li>
             <li class="porfolio__item">
-              <button class="portfolio__btn">Корпоративные</button>
+              <button class="portfolio__btn" type="button" data-filter=".corporate">Корпоративные</button>
             </li>
             <li class="porfolio__item">
-              <button class="portfolio__btn">E-commerce</button>
+              <button class="portfolio__btn" type="button" data-filter=".e-com">E-commerce</button>
             </li>
           </ul>
 
           <!-- Фото выполненных работ, используется флекс -->
           <div class="portfolio__cases">
-            <img class="portfolio__img" src="./image/portfolio/img1.jpg" alt="Река_в_городе">
-            <img class="portfolio__img" src="./image/portfolio/img2.jpg" alt="Река_с_мостом">
-            <img class="portfolio__img" src="./image/portfolio/img3.jpg" alt="Дорожный_мост">
-            <img class="portfolio__img" src="./image/portfolio/img4.jpg" alt="Город">
-            <img class="portfolio__img" src="./image/portfolio/img5.jpg" alt="Побережье">
-            <img class="portfolio__img" src="./image/portfolio/img6.jpg" alt="Скала">
+            <img class="portfolio__img landing" src="./image/portfolio/img1.jpg" alt="Река_в_городе">
+            <img class="portfolio__img landing" src="./image/portfolio/img2.jpg" alt="Река_с_мостом">
+            <img class="portfolio__img corporate" src="./image/portfolio/img3.jpg" alt="Дорожный_мост">
+            <img class="portfolio__img corporate" src="./image/portfolio/img4.jpg" alt="Город">
+            <img class="portfolio__img e-com" src="./image/portfolio/img5.jpg" alt="Побережье">
+            <img class="portfolio__img e-com" src="./image/portfolio/img6.jpg" alt="Скала">
           </div>
 
-          <button class="portfolio__btn-load">Загрузить еще</button>
+          <button class="portfolio__btn-load" type="button">Загрузить еще</button>
 
         </div>
       </div>
@@ -213,8 +217,18 @@
   <!-- Подвал сайта -->
   <footer class="footer"></footer>
 
+
+  <!-- Подключение mixitup - функционал для фильтрации блока портфолио -->
+  <script src="./js/mixitup.min.js"></script>
+
+  <script>
+    var containerEl = document.querySelector('.portfolio__cases');
+
+    var mixer = mixitup(containerEl);
+  </script>
+
   <!-- Подключение jquery -->
-  <script src="./js/jquery.min.js"></script>
+  <!-- <script src="./js/jquery.min.js"></script> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
 </body>
