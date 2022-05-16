@@ -3,8 +3,10 @@
     font-size: 1.125rem;
     line-height: 160%;
     
-    & > p:not(:last-child) {
+    p {
+      &:not(:last-child) {
       margin-bottom: 30px;
+      }
     }
   }
 }

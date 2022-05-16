@@ -1,14 +1,17 @@
 .portfolio {
   padding-top: 0;
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  text-align: center;
 
   &__list {
     display: flex;
+    justify-content: center;
     margin-bottom: 60px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   &__btn {
@@ -16,61 +19,57 @@
     font-size: 1.5rem;
     line-height: 160%;
     background-color: inherit;
-    margin-right: 35px;
-    // &:not(:last-child) {
-    //   margin-right: 35px;
-    // }
     
     &:focus {
-      box-shadow: 0px 0px 0px 2px rgba(35, 82, 222, 0.5);
+      box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
       border-radius: 3px;
     }
-    &:active {
-      color: #2352DE;
-    }
+
     &:hover {
       text-decoration-line: underline;
+    }
+
+    &:hover, &:active {
       color: #2352DE;
     }
   }
 
   &__cases {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 60px;
+    margin-right: -45px;
+    margin-top: -45px;
   }
 
   &__img {
-    max-width: 360px;
-    max-height: 360px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
-    // Нижний отступ для всех картинок, кроме тех, что в последнем ряду
-    &:not(:nth-last-child(-n+3)) {
-      margin-bottom: 45px;
-    }
-    // Отступ справа для всех картинок, кроме тех, что в последней колонке
-    &:not(:nth-child(3n)) {
-      margin-right: 45px;
-    }
+    margin-right: 45px;
+    margin-top: 45px;
   }
 
-  &__btn-load {
+  &__load {
     font-size: 1.125rem;
     color: $color-white;
-    padding: 12px 24px;
+    padding: 10px 22px;
+    border: 1px solid transparent;
     background-color: #2352DE;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2;
 
     &:focus {
-      box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+      box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
     }
-    &:active {
-      box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
-    }
+
     &:hover {
       background-color: #FFFFFF;
-      border: 1px solid #2352DE;
+      border-color: #2352DE;
       color: #2352DE;
+    }
+
+    &:active {
+      box-shadow: inset 0 7px 4px rgba(0, 0, 0, 0.25);
     }
   }
 }

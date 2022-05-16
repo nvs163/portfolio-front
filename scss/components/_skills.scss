@@ -1,5 +1,5 @@
 .skills {
-  background: #F6F6F8;
+  background-color: $background-color-secondary;
 
   &__inner {
     display: flex;
@@ -21,20 +21,25 @@
   }
 
   &__name {
+    width: 64px;
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 100%;
     text-transform: uppercase;
-    width: 64px;
   }
 
-  &__progress {
+  &__grey {
+    position: relative;
+    width: 600px;
     height: 32px;
-    &--blue {
-      background-color: #2352DE;
-    }
-    &--grey {
-      background-color: #DBDBED;
-    }
+    background-color: #DBDBED;
+  }
+
+  &__blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    background-color: #2352DE;
   }
 }

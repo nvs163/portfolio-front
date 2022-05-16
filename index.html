@@ -23,12 +23,12 @@
       <nav class="header__content">
 
         <!-- Логотип сайта -->
-        <a class="logo" href="/">
+        <a class="logo" href="#">
           <img src="./image/header/logo.svg" alt="Логотип">
         </a>
 
         <!-- Основное меню страницы -->
-        <ul class="menu__list">
+        <ul class="menu">
           <li class="menu__item">
             <a class="menu__link" href="#about">Обо мне</a>
           </li>
@@ -63,7 +63,7 @@
           <div class="hero__text">
             <h1 class="hero__title">
               Привет, я Владислав Никитин
-              <span class="hero__title--bold">frontend-<br>разработчик</span>
+              <span class="hero__profession">frontend-<br>разработчик</span>
             </h1>
           </div>
 
@@ -79,7 +79,7 @@
       <div class="container">
 
         <!-- Заголовок секции -->
-        <h2 class="about__title section__title">Обо мне</h2>
+        <h2 class="title">Обо мне</h2>
 
         <!-- Текстовый раздел блока -->
         <div class="about__text">
@@ -99,33 +99,36 @@
       <div class="container">
 
         <!-- Заголовок секции -->
-        <h2 class="section__title">Навыки</h2>
+        <h2 class="title">Навыки</h2>
 
         <!-- Обертка, используется флекс -->
         <div class="skills__inner">
 
-          <img class="skills__img" src="./image/skills/portrait.png" alt="Разработчик-сайтов">
+          <img class="skills__img" src="./image/skills/portrait.jpg" alt="Разработчик-сайтов">
 
           <!-- Список навыков, используется флекс -->
           <ul class="skills__list">
 
             <li class="skills__item">
               <span class="skills__name">html</span>
-              <!-- Высота прогресса задана в стилях для класса skills__progress -->
-              <span class="skills__progress skills__progress--blue" style="width: 510px;"></span> 
-              <div class="skills__progress skills__progress--grey" style="width: 90px;"></div>
+              <!-- Индикаторы прогресса -->
+              <div class="skills__grey">
+                <span class="skills__blue" style="width: 510px;"></span>
+              </div>
             </li>
 
             <li class="skills__item">
               <span class="skills__name">css</span>
-              <span class="skills__progress skills__progress--blue" style="width: 480px;"></span>
-              <div class="skills__progress skills__progress--grey" style="width: 120px;"></div>
+              <div class="skills__grey">
+                <span class="skills__blue" style="width: 480px;"></span>
+              </div>
             </li>
 
             <li class="skills__item">
               <span class="skills__name">js</span>
-              <span class="skills__progress skills__progress--blue" style="width: 366px;"></span>
-              <div class="skills__progress skills__progress--grey"  style="width: 234px;"></div>
+              <div class="skills__grey">
+                <span class="skills__blue" style="width: 366px;"></span>
+              </div>
             </li>
           </ul>
 
@@ -138,33 +141,30 @@
       <div class="container">
 
         <!-- Заголовок секции -->
-        <h2 class="section__title">Услуги</h2>
+        <h2 class="title">Услуги</h2>
 
         <!-- Список услуг, используется флекс -->
         <ul class="services__list">
 
-          <li class="services__item">
+          <li class="services__item services__item--markup">
             <!-- иконки заданы в стилях через background-image -->
-            <i class="services__icon services__icon-markup"></i>
             <h3 class="services__title">Вёрстка проектов</h3>
             <div class="services__description">
-              <span>Сделаю качественную вёрстку вашего  проекта по предоставленному макету или примеру</span>
+              <p>Сделаю качественную вёрстку вашего  проекта по предоставленному макету или примеру</p>
             </div>
           </li>
 
-          <li class="services__item">
-            <i class="services__icon services__icon-cms"></i>
+          <li class="services__item services__item--cms">
             <h3 class="services__title">Посадка на CMS</h3>
             <div class="services__description">
-              <span>Интегрирую ваш проект в одну из популярных CMS</span>
+              <p>Интегрирую ваш проект в одну из популярных CMS</p>
             </div>
           </li>
 
-          <li class="services__item">
-            <i class="services__icon services__icon-support"></i>
+          <li class="services__item services__item--support">
             <h3 class="services__title">Поддержка сайта</h3>
             <div class="services__description">
-              <span>Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта</span>
+              <p>Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта</p>
             </div>
           </li>
 
@@ -175,41 +175,50 @@
     <!-- Блок с выполненными работами -->
     <section class="portfolio section" id="portfolio">
       <div class="container">
-        <!-- Обертка блока, используется флекс -->
-        <div class="portfolio__inner">
 
           <!-- Заголовок секции -->
-          <h2 class="portfolio__title section__title">Мои работы</h2>
+          <h2 class="portfolio__title title">Мои работы</h2>
 
           <!-- Список направленый выполненных работ -->
           <ul class="portfolio__list">
-            <li class="porfolio__item">
+            <li class="portfolio__item">
               <button class="portfolio__btn portfolio__btn--active" type="button" data-filter="all">Все работы</button>
             </li>
-            <li class="porfolio__item">
-              <button class="portfolio__btn" data-filter=".landing">Лендинги</button>
+            <li class="portfolio__item">
+              <button class="portfolio__btn" type="button" data-filter=".landing">Лендинги</button>
             </li>
-            <li class="porfolio__item">
+            <li class="portfolio__item">
               <button class="portfolio__btn" type="button" data-filter=".corporate">Корпоративные</button>
             </li>
-            <li class="porfolio__item">
+            <li class="portfolio__item">
               <button class="portfolio__btn" type="button" data-filter=".e-com">E-commerce</button>
             </li>
           </ul>
 
           <!-- Фото выполненных работ, используется флекс и фильтрация -->
-          <div class="portfolio__cases">
-            <img class="portfolio__img mix landing" src="./image/portfolio/img1.jpg" alt="Река_в_городе">
-            <img class="portfolio__img mix landing" src="./image/portfolio/img2.jpg" alt="Река_с_мостом">
-            <img class="portfolio__img mix corporate" src="./image/portfolio/img3.jpg" alt="Дорожный_мост">
-            <img class="portfolio__img mix corporate" src="./image/portfolio/img4.jpg" alt="Город">
-            <img class="portfolio__img mix e-com" src="./image/portfolio/img5.jpg" alt="Побережье">
-            <img class="portfolio__img mix e-com" src="./image/portfolio/img6.jpg" alt="Скала">
-          </div>
+          <ul class="portfolio__cases">
+            <li class="portfolio__img mix landing">
+              <img src="./image/portfolio/img1.jpg" alt="Река в городе">
+            </li>
+            <li class="portfolio__img mix landing">
+              <img src="./image/portfolio/img2.jpg" alt="Река с мостом">
+            </li>
+            <li class="portfolio__img mix corporate">
+              <img src="./image/portfolio/img3.jpg" alt="Дорожный мост">
+            </li>
+            <li class="portfolio__img mix corporate">
+              <img src="./image/portfolio/img4.jpg" alt="Город">
+            </li>
+            <li class="portfolio__img mix e-com">
+              <img src="./image/portfolio/img5.jpg" alt="Побережье">
+            </li>
+            <li class="portfolio__img mix e-com">
+              <img src="./image/portfolio/img6.jpg" alt="Скала">
+            </li>
+          </ul>
 
-          <button class="portfolio__btn-load" type="button">Загрузить еще</button>
+          <button class="portfolio__load" type="button">Загрузить еще</button>
 
-        </div>
       </div>
     </section>
 
@@ -219,19 +228,14 @@
   <footer class="footer"></footer>
 
 
+  <!-- Подключение jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <!-- Подключение mixitup - функционал для фильтрации блока портфолио -->
   <script src="./js/mixitup.min.js"></script>
 
-  <script>
-    var containerEl = document.querySelector('.portfolio__cases');
-
-    var mixer = mixitup(containerEl);
-  </script>
-
-  <!-- Подключение jquery - указал два способа. Если не нужен, то удалю. Если нужен, то хотелось бы понять, какой вариант лучше использовать -->
-
-  <!-- <script src="./js/jquery.min.js"></script> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- Общий файл для скриптов -->
+  <script src="./js/main.js"></script>
 
 </body>
 </html>

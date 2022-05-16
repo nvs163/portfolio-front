@@ -5,31 +5,27 @@
   }
 
   &__item {
+    padding-top: 90px;
     max-width: 330px;
-  }
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
 
-  &__icon {
-    display: block;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 30px;
-
-    &-markup {
+    &--markup {
       background-image: url('../image/services/markup_icon.svg');
     }
-    &-cms {
+    &--cms {
       background-image: url('../image/services/dev_icon.svg');
     }
-    &-support {
+    &--support {
       background-image: url('../image/services/chat_icon.svg');
     }
   }
 
   &__title {
+    margin-bottom: 25px;
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 130%;
-    margin-bottom: 25px;
   }
 
   &__description {
