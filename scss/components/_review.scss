@@ -1,0 +1,58 @@
+.review {
+  background-color: #F6F6F8;
+  text-align: center;
+
+  &__title {
+    // text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2352DE;
+  }
+
+  &__text {
+    width: 400px;
+    padding: 0 15px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 130%;
+  }
+
+  &__video {
+    position: relative;
+    width: 570px;
+    height: 400px;
+    
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      transform: translateX(50%);
+      border: 100px solid transparent;
+      border-top: 100px solid green;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
