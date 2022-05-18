@@ -7,6 +7,9 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     width: 530px;
   }
 
@@ -16,7 +19,7 @@
   }
 
   &__requisites {
-    display: block;
+    display: inline-block;
     color: #2352DE;
 
     &--phone {
@@ -25,6 +28,20 @@
 
     &--mail {
       margin-bottom: 21px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.0001);
+    }
+    
+    &:hover {
+      text-decoration-line: underline;
+    }
+
+    &:active {
+      color: rgba(35, 82, 222, 0.7);
     }
   }
 
@@ -76,7 +93,16 @@
     width: 255px;
     padding: 13px 15px;
     background-color: #F6F6F8;
-    color: #9C9CAB;
+    color: #000;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+    }
+
+    &:hover {
+      color: #000;
+      cursor: pointer;
+    }
   }
 
   &__area {

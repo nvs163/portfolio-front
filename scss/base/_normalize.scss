@@ -57,7 +57,7 @@ select {
 input:focus,
 button:focus,
 textarea:focus {
-  border: none;
+  outline: none;
 }
 
 a {
