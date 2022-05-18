@@ -32,7 +32,10 @@ figcaption,
 blockquote,
 dl,
 dd {
+  padding: 0;
   margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul {
