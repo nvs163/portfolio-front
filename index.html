@@ -182,16 +182,16 @@
           <!-- Список направленый выполненных работ -->
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <button class="portfolio__btn portfolio__btn--active" type="button" data-filter="all">Все работы</button>
+              <button class="portfolio__button portfolio__button--active" type="button" data-filter="all">Все работы</button>
             </li>
             <li class="portfolio__item">
-              <button class="portfolio__btn" type="button" data-filter=".landing">Лендинги</button>
+              <button class="portfolio__button" type="button" data-filter=".landing">Лендинги</button>
             </li>
             <li class="portfolio__item">
-              <button class="portfolio__btn" type="button" data-filter=".corporate">Корпоративные</button>
+              <button class="portfolio__button" type="button" data-filter=".corporate">Корпоративные</button>
             </li>
             <li class="portfolio__item">
-              <button class="portfolio__btn" type="button" data-filter=".e-com">E-commerce</button>
+              <button class="portfolio__button" type="button" data-filter=".e-com">E-commerce</button>
             </li>
           </ul>
 
@@ -217,7 +217,7 @@
             </li>
           </ul>
 
-          <button class="portfolio__load" type="button">Загрузить еще</button>
+          <button class="portfolio__btn btn" type="button">Загрузить еще</button>
 
       </div>
     </section>
@@ -304,21 +304,27 @@
 
           <div class="contacts__info">
 
-            <div class="conacts__text">
+            <div class="contacts__text">
               <p>
                 Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона, email, в соцсетях:
               </p>
             </div>
 
-            <a class="contacts__phone" href="tel:+380501111111">+38 (050) 111 11 11</a>
+            <a class="contacts__requisites contacts__requisites--phone" href="tel:+380501111111">+38 (050) 111 11 11</a>
 
-            <a class="contacts__mail" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+            <a class="contacts__requisites contacts__requisites--mail" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
 
-            <div class="contacts__social">
-              <a class="contacts__icon contacts__icon--ig" href="#"></a>
-              <a class="contacts__icon contacts__icon--fb" href="#"></a>
-              <a class="contacts__icon contacts__icon--tg" href="#"></a>
-            </div>
+            <ul class="contacts__social">
+              <li class="contacts__item contacts__item--ig">
+                <a href="#"></a>
+              </li>
+              <li class="contacts__item contacts__item--fb">
+                <a href="#"></a>
+              </li>
+              <li class="contacts__item contacts__item--tg">
+                <a href="#"></a>
+              </li>
+            </ul>
 
           </div>
 
@@ -341,7 +347,7 @@
               <textarea class="form__area" name="" id="area" placeholder="Текст вашего сообщения"></textarea>
             </div>
 
-            <button class="form__btn">Отправить</button>
+            <button class="form__btn btn">Отправить</button>
 
           </form>
 
