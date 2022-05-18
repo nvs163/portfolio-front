@@ -54,6 +54,12 @@ select {
   border: none;
 }
 
+input:focus,
+button:focus,
+textarea:focus {
+  border: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;

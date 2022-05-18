@@ -55,6 +55,12 @@ select {
   border: none;
 }
 
+input:focus,
+button:focus,
+textarea:focus {
+  border: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -660,4 +666,18 @@ body {
   background-color: #F6F6F8;
   color: #9C9CAB;
   resize: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 153px;
+  background-color: #343740;
 }
