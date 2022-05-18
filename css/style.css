@@ -516,3 +516,51 @@ body {
   border-top: 100px solid green;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.stats__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats__item {
+  width: 280px;
+  height: 287px;
+  padding-top: 150px;
+  text-align: center;
+  background-color: #F6F6F8;
+  background-repeat: no-repeat;
+  background-position: 50% 50px;
+  background-size: auto 80px;
+  border: 1px solid #DBDBED;
+}
+
+.stats__item--works {
+  background-image: url(/image/stats/works.svg);
+}
+
+.stats__item--clients {
+  background-image: url(/image/stats/clients.svg);
+}
+
+.stats__item--coffee {
+  background-image: url(/image/stats/coffee.svg);
+}
+
+.stats__item--reviews {
+  background-image: url(/image/stats/review.svg);
+}
+
+.stats__title {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.stats__data {
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 100%;
+}

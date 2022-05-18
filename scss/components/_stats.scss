@@ -1,0 +1,47 @@
+.stats {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // У этого элемента размер можно задать через высоту, но также можно через отступы. Как лучше? 
+  &__item {
+    width: 280px;
+    height: 287px;
+    padding-top: 150px;
+    // padding-bottom: 50px;
+    text-align: center;
+    background-color: #F6F6F8;
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+    background-size: auto 80px;
+    border: 1px solid #DBDBED;
+
+    &--works {
+      background-image: url(/image/stats/works.svg);
+    }
+
+    &--clients {
+      background-image: url(/image/stats/clients.svg);
+    }
+
+    &--coffee {
+      background-image: url(/image/stats/coffee.svg);
+    }
+
+    &--reviews {
+      background-image: url(/image/stats/review.svg);
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+  }
+
+  &__data {
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 100%;
+  }
+}
