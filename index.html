@@ -8,6 +8,8 @@
   <!-- Таблица стилей -->
   <link rel="stylesheet" href="./css/style.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
   <!-- Фавикон -->
   <link rel="icon" href="./image/favicons/favicon.ico">
   <link rel="icon" href="./image/favicons/favicon.svg" type="image/svg+xml">
@@ -42,10 +44,10 @@
             <a class="menu__link" href="#portfolio">Портфолио</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Отзывы</a>
+            <a class="menu__link" href="#review">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#contacts">Контакты</a>
           </li>
         </ul>
 
@@ -223,7 +225,7 @@
     </section>
 
     <!-- Блок Отзывы клиентов -->
-    <section class="review section">
+    <section class="review section" id="review">
       <div class="container">
 
         <!-- Заголовок секции -->
@@ -296,7 +298,7 @@
     </section>
 
     <!-- Блок Контакты -->
-    <section class="contacts section">
+    <section class="contacts section" id="contacts">
       <div class="container">
         <!-- Заголовок секции -->
         <h2 class="title">Контакты</h2>
@@ -373,6 +375,9 @@
 
   <!-- Подключение mixitup - функционал для фильтрации блока портфолио -->
   <script src="./js/mixitup.min.js"></script>
+
+  <!-- Подключение плагина Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
   <!-- Общий файл для скриптов -->
   <script src="./js/main.js"></script>
