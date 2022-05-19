@@ -4,12 +4,12 @@
     justify-content: space-between;
   }
 
-  // У этого элемента размер можно задать через высоту, но также можно через отступы. Как лучше? 
+  // У этого элемента высоту можно задать через фиксированную высоту, но также можно через отступы. Как лучше? 
   &__item {
     width: 280px;
-    height: 287px;
+    // height: 287px;
     padding-top: 150px;
-    // padding-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: #F6F6F8;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
     font-size: 1.125rem;
   }
 
-  &__data {
+  &__numbers {
     font-weight: 600;
     font-size: 2.75rem;
     line-height: 100%;

@@ -22,14 +22,6 @@
     display: inline-block;
     color: #2352DE;
 
-    &--phone {
-      margin-bottom: 15px;
-    }
-
-    &--mail {
-      margin-bottom: 21px;
-    }
-
     &:focus {
       box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
       border-radius: 3px;
@@ -43,19 +35,33 @@
     &:active {
       color: rgba(35, 82, 222, 0.7);
     }
+
+    &--phone {
+      margin-bottom: 15px;
+    }
+
+    &--mail {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__social {
+    display: flex;
   }
 
   &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
     display: inline-block;
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 44px;
     background-position: 0 0;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
 
     &--ig {
       background-image: url(/image/contacts/instagram.svg);
@@ -68,6 +74,20 @@
     &--tg {
       background-image: url(/image/contacts/telegram.svg);
     }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+      border-radius: 3px;
+    }
+    
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      box-shadow: 4px 4px 10px 0 rgba(35, 82, 222, 0.2);
+    }
+
   }
 }
 
@@ -89,8 +109,9 @@
     font-weight: 600;
   }
 
-  &__input {
-    width: 255px;
+
+
+  &__field {
     padding: 13px 15px;
     background-color: #F6F6F8;
     color: #000;
@@ -99,18 +120,18 @@
       box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
     }
 
-    &:hover {
+    &:hover::placeholder {
       color: #000;
-      cursor: pointer;
     }
-  }
 
-  &__area {
-    width: 540px;
-    height: 115px;
-    padding: 13px 15px;
-    background-color: #F6F6F8;
-    color: #9C9CAB;
-    resize: none;
+    &--input {
+      width: 255px;
+    }
+
+    &--area {
+      width: 540px;
+      height: 115px;
+      resize: none;
+    }
   }
 }

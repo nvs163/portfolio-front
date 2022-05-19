@@ -249,9 +249,11 @@
           <video class="review__video" poster="./image/review/facebook.jpg">
             <source src="https://www.youtube.com/watch?v=xanvzIQUzgQ" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
           </video>
+
         </div>
       </div>
     </section>
+
 
     <!-- Блок с цифрами -->
     <section class="stats section">
@@ -262,28 +264,28 @@
 
             <li class="stats__item stats__item--works">
               <h3 class="stats__title">Выполненных работ</h3>
-              <div class="stats__data">
+              <div class="stats__numbers">
                 <p>56</p>
               </div>
             </li>
 
             <li class="stats__item stats__item--clients">
               <h3 class="stats__title">Довольных клиентов</h3>
-              <div class="stats__data">
+              <div class="stats__numbers">
                 <p>23</p>
               </div>
             </li>
 
             <li class="stats__item stats__item--coffee">
               <h3 class="stats__title">Выпито чашек кофе</h3>
-              <div class="stats__data">
+              <div class="stats__numbers">
                 <p>477</p>
               </div>
             </li>
 
             <li class="stats__item stats__item--reviews">
               <h3 class="stats__title">Всего отзывов</h3>
-              <div class="stats__data">
+              <div class="stats__numbers">
                 <p>48</p>
               </div>
             </li>
@@ -315,14 +317,14 @@
             <a class="contacts__requisites contacts__requisites--mail" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
 
             <ul class="contacts__social">
-              <li class="contacts__item contacts__item--ig">
-                <a href="#"></a>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--ig" href="#"></a>
               </li>
-              <li class="contacts__item contacts__item--fb">
-                <a href="#"></a>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--fb" href="#"></a>
               </li>
-              <li class="contacts__item contacts__item--tg">
-                <a href="#"></a>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--tg" href="#"></a>
               </li>
             </ul>
 
@@ -334,17 +336,17 @@
             <!-- Обертка для полей ввода -->
             <div class="form__inner">
               <label class="form__label" for="name">Ваше имя</label>
-              <input class="form__input" id="name" type="text" placeholder="Имя">
+              <input class="form__field form__field--input" id="name" type="text" placeholder="Имя" name="name">
             </div>
 
             <div class="form__inner">
               <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input" id="phone" type="tel" placeholder="+380501111111">
+              <input class="form__field form__field--input" id="phone" type="tel" placeholder="+380501111111" name="phone">
             </div>
 
             <div class="form__inner">
               <label class="form__label" for="area">Ваше сообщение</label>
-              <textarea class="form__area" name="" id="area" placeholder="Текст вашего сообщения"></textarea>
+              <textarea class="form__field form__field--area" id="area" placeholder="Текст вашего сообщения" name="massage"></textarea>
             </div>
 
             <button class="form__btn btn">Отправить</button>

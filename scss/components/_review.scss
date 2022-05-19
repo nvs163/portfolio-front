@@ -36,8 +36,8 @@
     position: relative;
     width: 570px;
     height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
     
-
     &::after {
       content: '';
       position: absolute;
@@ -45,10 +45,9 @@
       left: 50%;
       width: 0;
       height: 0;
-      transform: translateX(50%);
+      transform: translate(50%);
       border: 100px solid transparent;
       border-left: 100px solid #fff;
-      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 }
