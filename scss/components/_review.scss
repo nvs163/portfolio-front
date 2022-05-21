@@ -33,21 +33,44 @@
   }
 
   &__video {
-    position: relative;
     width: 570px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.3);
-    
+  }
+
+  &__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+    }
+
     &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      transform: translate(50%);
-      border: 100px solid transparent;
-      border-left: 100px solid #fff;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/review/play.svg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 86px 100px;
+    transform: translate(-50%,-50%);
+    }
+
+    &:hover::after {
+    background-size: 129px 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active::after {
+      background-size: 52px 60px;
+      background-color: rgba(0, 0, 0, 0.45);
     }
   }
 }
